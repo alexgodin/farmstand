@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Athens Academy</title>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+  <link href="./master.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="toolkit.js"></script>
+  <script src="custom.js"></script>
+
+</head>
+<body>
+  <div class="stage" id="stage">
+  <!-- START OF MODAL EXAMPLE -->
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">Sign up</h4>
+        </div>
+        <div class="modal-body app-price-plans p-x-lg">
+          <div class="row">
+            <h3>Welcome to the movement.</h3>
+            <h4>Get ready to change the world.</h4>
+
+            <p>Athens Academy is an independent organization without outside funding. We charge a small enrollment fee to make sure our students are serious and cover the cost of operations.</p>
+          </div>
+          <div class="row">
+            <form id="signup-form">
+              <div id="form-error" style="display:none" class="alert alert-warning alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span id="form-error-text"></span></div>
+              <h6>Sign Up:</h6>
+              <div class="form-group col-sm-5 p-x-0">
+                <input id="name" type="text" class="form-control" id="recipient-name" placeholder="Name">
+              </div>
+              <div class="form-group col-sm-5 p-x-0 col-sm-offset-1">
+                <input id="email" type="email" class="form-control" id="recipient-email" placeholder="E-mail">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" value="Join" class="btn btn-primary" id="sendInfoToMixpanel"></input>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- END OF MODAL EXAMPLE -->
+
+  <!-- START OF ALERT -->
+  <div id="form-success" style="display:none" class="alert alert-success alert-dismissible fade in alert-fixed-top" role="alert">
+    <strong>Thanks!</strong> We've added you to our waitlist.
+  </div>
+  <!-- END OF ALERT -->
+
+
+  <div class="block block-inverse block-fill-height app-header"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/liberty.jpg);">
+    <div class="block-xs-middle p-b-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-md-6">
+            <h1 class="block-title m-b-sm">Stand up for our country.</h1>
+            <p class="lead">Athens Academy helps citizens become activists. Our eight week intensive program teaches you the skills you need now more than ever.
+            </p>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" data-whatever="">Join The Movement</button>
+            <a href="#two" class="btn btn-lg btn-warning-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block eighteen p-y-0" id="two">
+    <div class="row">
+      <div class="col-md-6 col-sm-4 hidden-xs hidden-sm">
+        <img src="./img/raisedhand.png" class="w-full m-t-lg">
+      </div>
+      <div class="col-md-5 col-sm-10 col-sm-offset-1 col-md-offset-0 m-t-lg">
+        <h3>Ready for 2018</h3>
+        <p class="lead">
+        There are more than TK house of representatives and state legislature races in the next 18 months. Athens teaches concerned citizens the crucial campaign tactics they need to swing those elections.
+        </p>
+        <p class="lead">
+        Our graduates are certified electioneers. We work with progressive campaigns across the country to place Athens alumni in key voter outreach roles.
+        </p>
+        <button type="button" class="btn btn-primary btn-lg m-t-md m-l" data-toggle="modal" data-target="#myModal" data-whatever="">Sign up</button>
+        <a href="#three" class="btn btn-lg btn-primary-outline p-x-md m-t-md">How it works</a>
+      </div>
+    </div>
+  </div>
+  <div class="block block-inverse" id="three">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-md-3 col-sm-6 p-x text-center">
+        <h1>1</h1>
+        <h4>We help create your cell.</h4>
+        <p>Athens helps you create small group to learn with weekly.</p>
+        </div>
+
+        <div class="col-md-3 col-sm-6 p-x text-center">
+        <h1>2</h1>
+        <h4>Work through the curriculum.</h4>
+        <p>Together, your cell works through our intense eight week training program.</p>
+        </div>
+
+        <div class="col-md-3 col-sm-6 p-x text-center">
+        <h1>3</h1>
+        </div>
+
+        <div class="col-md-3 col-sm-6 p-x text-center">
+        <h1>4</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
