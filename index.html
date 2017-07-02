@@ -12,6 +12,21 @@
   <script src="custom.js"></script>
 </head>
 <body>
+  <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header p-b-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body p-t-0">
+        <h1 class="m-t-0">Order by text.</h1>
+        <h4>Farmstand orders happen by text message.</h4>
+        <h6>Text us today to get started. <a href="tel:4259546346" class="app-num">425-954-6346</a></h6>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="block block-inverse app-lede text-center p-t-0">
     <nav class="navbar m-b-0 text-uppercase">
       <div class="container-fluid">
@@ -43,7 +58,7 @@
       <p class="lead">Get fresh ingredients today.</p>
     </div>
     <div class="cta m-t-lg">
-      <button class="btn btn-primary btn-lg">Get Started</button>
+      <button data-target="#infoModal" data-toggle="modal" class="btn btn-primary btn-lg">Get Started</button>
       <a href="#one" class="app-learn-more lead">or <span class="app-learn-more">learn more</span></a>
     </div>
   </div>
@@ -57,7 +72,7 @@
     <h6 class="m-b-0">How it works</h6>
     <h2 class="m-t-0">Premium ingredients and recipes available near you.</h2>
     <div class="cta m-t text-center">
-      <button class="btn btn-warning btn-sm">Get Started</button>
+      <button data-target="#infoModal" data-toggle="modal" class="btn btn-warning btn-sm">Get Started</button>
       <a href="#one" class="app-learn-more">or <span class="app-learn-more">learn more</span></a>
     </div>
   </div>
@@ -96,7 +111,7 @@
     <h6 class="m-y-0">For three meals/day</h6>
     <p class="m-y-0">EBT accepted</p>
     <div class="cta m-t">
-      <button class="btn btn-primary btn-lg">Get Started</button>
+      <button data-target="#infoModal" data-toggle="modal" class="btn btn-primary btn-lg">Get Started</button>
       <a href="#one" class="app-learn-more lead">or <span class="app-learn-more">learn more</span></a>
     </div>
   </div>
@@ -105,7 +120,7 @@
         <h3>Just the ingredients you need. <span>Zero waste.</span></h3>
         <h6>We keep costs low by sending supplies for easy recipes you'll love.</h6>
       <div class="cta m-t-md text-center">
-        <button class="btn btn-warning btn-lg">Get Started</button>
+        <button data-target="#infoModal" data-toggle="modal" class="btn btn-warning btn-lg">Get Started</button>
         <a href="#one" class="app-learn-more lead">or <span class="app-learn-more">learn more</span></a>
       </div>
     </div>
@@ -175,7 +190,7 @@
 <div class="block-inverse block text-center p-y app-foot">
   <h1>Have questions? </h1>
   <h6>Text us to learn more. We can't wait to hear from you.</h6>
-  <h2><a href="tel:4259546346">425-954-6346</a></h2>
+  <h2><a href="tel:4259546346" class="app-num">425-954-6346</a></h2>
 </div>
 </body>
 </html>
