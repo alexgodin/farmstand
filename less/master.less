@@ -1,6 +1,24 @@
 @import "./variables.less";
 @import "./components.less";
 
+
+h6 {
+  font-size:  @font-size-h4;
+  font-weight: @font-weight-base;
+  text-transform: none;
+}
+
+@media (min-width:@screen-sm-max) {
+  h1, .h1 { font-size: @font-size-h1*1.7; }
+  h2, .h2 { font-size: @font-size-h2*1.7; }
+  h3, .h3 { font-size: @font-size-h3*1.7; }
+  h4, .h4 { font-size: @font-size-h4*1.7; }
+  h5, .h5 { font-size: @font-size-h5*1.7; }
+  h6, .h6 { font-size: @font-size-h4*1.7; }
+  p { font-size: @font-size-base*1.2;}
+  .lead { font-size: @font-size-base*2;}
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: @brand-success;
 }
